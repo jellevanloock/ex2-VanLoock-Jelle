@@ -23,7 +23,7 @@
 	<input type="button" value="3" onclick="krijgwaarde(this.value)">
 	<input type="button" value="+" onclick="krijgwaarde(this.value)">
 	<br>
-	<input type="button" value="=" onclick="">
+	<input type="button" value="=" onclick="uitrekenen()">
 	<input type="button" value="0" onclick="krijgwaarde(this.value)">
 	<input type="button" value="." onclick="krijgwaarde(this.value)">
 	<input type="button" value="-" onclick="krijgwaarde(this.value)">
@@ -35,6 +35,10 @@
     function krijgwaarde(getal) {
         string += getal;
         document.getElementById("display").value = string;
+    }
+    function uitrekenen(){
+    	string = eval(string);
+    	document.getElementById("display").value = string;
     }
 
 </script>
