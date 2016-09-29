@@ -27,7 +27,8 @@
 	<input type="button" value="0" onclick="krijgwaarde(this.value)">
 	<input type="button" value="." onclick="krijgwaarde(this.value)">
 	<input type="button" value="-" onclick="krijgwaarde(this.value)">
-	<input type="button" value="c" onclick="">
+	<br>
+	<input type="button" value="c" onclick="wegdoen()">
 	</form>
 </div>
 <script>
@@ -38,6 +39,10 @@
     }
     function uitrekenen(){
     	string = eval(string);
+    	document.getElementById("display").value = string;
+    }
+    function wegdoen(){
+    	string = "";
     	document.getElementById("display").value = string;
     }
 
