@@ -6,29 +6,37 @@
 <body>
 <div>
 	<form name="calculator">
-	<input type="text" placeholder="0">
+	<input type="text" id="display" placeholder="0">
 	<br>
-	<input type="button" value="7" onclick="">
-	<input type="button" value="8" onclick="">
-	<input type="button" value="9" onclick="">
-	<input type="button" value="/" onclick="">
+	<input type="button" value="7" onclick="krijgwaarde(this.value)">
+	<input type="button" value="8" onclick="krijgwaarde(this.value)">
+	<input type="button" value="9" onclick="krijgwaarde(this.value)">
+	<input type="button" value="/" onclick="krijgwaarde(this.value)">
 	<br>
-	<input type="button" value="4" onclick="">
-	<input type="button" value="5" onclick="">
-	<input type="button" value="6" onclick="">
-	<input type="button" value="*" onclick="">
+	<input type="button" value="4" onclick="krijgwaarde(this.value)">
+	<input type="button" value="5" onclick="krijgwaarde(this.value)">
+	<input type="button" value="6" onclick="krijgwaarde(this.value)">
+	<input type="button" value="*" onclick="krijgwaarde(this.value)">
 	<br>
-	<input type="button" value="1" onclick="">
-	<input type="button" value="2" onclick="">
-	<input type="button" value="3" onclick="">
-	<input type="button" value="+" onclick="">
+	<input type="button" value="1" onclick="krijgwaarde(this.value)">
+	<input type="button" value="2" onclick="krijgwaarde(this.value)">
+	<input type="button" value="3" onclick="krijgwaarde(this.value)">
+	<input type="button" value="+" onclick="krijgwaarde(this.value)">
 	<br>
 	<input type="button" value="=" onclick="">
-	<input type="button" value="0" onclick="">
-	<input type="button" value="." onclick="">
-	<input type="button" value="-" onclick="">
+	<input type="button" value="0" onclick="krijgwaarde(this.value)">
+	<input type="button" value="." onclick="krijgwaarde(this.value)">
+	<input type="button" value="-" onclick="krijgwaarde(this.value)">
 	<input type="button" value="c" onclick="">
 	</form>
 </div>
+<script>
+    var string = "";
+    function krijgwaarde(getal) {
+        string += getal;
+        document.getElementById("display").value = string;
+    }
+
+</script>
 </body>
 </html>
